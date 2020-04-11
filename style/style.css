@@ -195,7 +195,7 @@ body::-webkit-scrollbar-thumb {
 .carousel::-webkit-scrollbar {
   height: 10px;
   background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 5px black;
+  box-shadow: 0 0 2px black;
 }
 
 .carousel::-webkit-scrollbar-thumb {
