@@ -16,8 +16,7 @@ body {
   align-items: center;
   &__img {
     width: 200px;
-    margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 20px;
   }
   &__menu {
     margin-right: 10px;
@@ -59,10 +58,65 @@ body {
   cursor: pointer;
 }
 .main {
+  height: $altura-buscador;
+  padding-top: $altura-buscador - 300px / 2 ;
+  text-align: center;
   &__title {
+    color: $color-letras;
+    margin: 15px 0;
+    font-size: 25px;
+  }
+}
+.input {
+  border: 2px solid $color-letras;
+  height: 50px;
+  width: 70%;
+  padding: 0 20px;
+  border-radius: 25px;
+  color: $color-letras;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  outline: none;
+  background-color: rgba(255,255,255, .1);
+}
+::placeholder {
+  color: $color-letras;
+}
 
+.carousel {
+  width: 100%;
+  overflow-x: scroll;
+  padding: 30px;
+  position: relative;
+  &__container {
+    white-space: nowrap;
+    margin: 70px 0px;
+    padding-bottom: 10px;
   }
-  &__input {
-    
+}
+.carousel__item {
+  width: 190px;
+  height: 250px;
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 20px;
+  background-color: rgb(42, 154, 96);
+  overflow: hidden;
+  cursor: pointer;
+  transition: 450ms all;
+  transform-origin: 50% 50%;
+  & img {
+    width: 100%;
+    height: auto;
   }
+}
+.carousel__item:hover ~ .carousel__item {
+  transform: translate3d(50px, 0, 0 );
+}
+.carousel__container:hover .carousel__item {
+  opacity: .3;
+}
+.carousel__container:hover .carousel__item:hover {
+  transform: scale(1.5);
+  opacity: 1;
 }

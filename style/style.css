@@ -7,7 +7,7 @@
 body {
   font-family: 'Muli', sans-serif;
   background-color: black;
-  background-color: #AB88FF;
+  background-color: #8E57ED;
 }
 
 .header {
@@ -20,8 +20,7 @@ body {
 
 .header__img {
   width: 200px;
-  margin-top: 10px;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .header__menu {
@@ -68,6 +67,79 @@ body {
 .header__menu li:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.main {
+  height: 280px;
+  padding-top: 130px;
+  text-align: center;
+}
+
+.main__title {
+  color: #ffffff;
+  margin: 15px 0;
+  font-size: 25px;
+}
+
+.input {
+  border: 2px solid #ffffff;
+  height: 50px;
+  width: 70%;
+  padding: 0 20px;
+  border-radius: 25px;
+  color: #ffffff;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+::placeholder {
+  color: #ffffff;
+}
+
+.carousel {
+  width: 100%;
+  overflow-x: scroll;
+  padding: 30px;
+  position: relative;
+}
+
+.carousel__container {
+  white-space: nowrap;
+  margin: 70px 0px;
+  padding-bottom: 10px;
+}
+
+.carousel__item {
+  width: 190px;
+  height: 250px;
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 20px;
+  background-color: #2a9a60;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 450ms all;
+  transform-origin: 50% 50%;
+}
+
+.carousel__item img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel__item:hover ~ .carousel__item {
+  transform: translate3d(50px, 0, 0);
+}
+
+.carousel__container:hover .carousel__item {
+  opacity: .3;
+}
+
+.carousel__container:hover .carousel__item:hover {
+  transform: scale(1.5);
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
