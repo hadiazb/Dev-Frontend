@@ -185,13 +185,6 @@ body::-webkit-scrollbar-thumb {
   background-position: left;
 }
 
-.carousel__item:nth-child(1) {
-  background-image: url(https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: left;
-}
-
 .carousel::-webkit-scrollbar {
   height: 10px;
   background: rgba(255, 255, 255, 0.2);
