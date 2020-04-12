@@ -39,25 +39,88 @@ body {
 }
 
 .login {
+  width: 400px;
+  height: 700px;
+  margin: 50px auto 10px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  color: $color-letras;
+  border-radius: 20px;
+  box-shadow: 0 0 5px black;
+  border: 1px solid $color-letras;
   &__container {
 
+    & h2 {
+      margin: 40px 0 40px;
+      text-align: center;
+    }
     &--form {
-
+      height: 300px;
     }
     &--remember-me {
-
+      display: flex;
+      justify-content: space-between;
+      & label {
+        font-weight: bold;
+      }
+      & a {
+        color: $color-letras;
+        text-decoration: none;
+      }
+      & a:hover {
+        text-decoration: underline;
+      }
     }
     &--social-media {
-
+      margin: 30px 0;
+    }
+    &--social-media div {
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
     &--register {
-
+      margin-top: 70px;
+      & a {
+        color: $color-letras;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      & a:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
 
-
-
+.input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  border-top: none;
+  border-left: none;
+  border-right:  none;
+  background-color: transparent;
+  outline: none;
+}
+.button {
+  width: 100%;
+  height: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  font-family: 'Muli', sans-serif;
+  color: $color-letras;
+  background-color: $color-login-buttom;
+  border: 1px solid $color-letras;
+  outline: none;
+  cursor: pointer;
+}
 ::placeholder {
   color: $color-letras;
+  font-family: 'Muli', sans-serif;
 }
